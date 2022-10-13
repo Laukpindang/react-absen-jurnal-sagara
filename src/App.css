@@ -1,5 +1,4 @@
 .App {
   padding-top: 85px;
-  background: linear-gradient(90deg, rgba(11, 171, 100, 1) 0%, rgba(59, 183, 143, 1) 100%);
-  /* overflow: hidden; */
+  background-image: linear-gradient(#96E4DF, #4DCCC6)
 }

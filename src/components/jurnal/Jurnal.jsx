@@ -3,6 +3,7 @@ import List from "../list/List";
 import { uid } from "uid";
 import axios from "axios";
 import ButtonNav from '../header/button-navigasi/button-nav';
+import './Jurnal.css'
 
 const Jurnal = () => {
 
@@ -86,9 +87,9 @@ const Jurnal = () => {
     }
 
     return (
-        <div className="App">
+        <div className="Jurnal">
             <nav className='navbar sticky-top navbar-light bg-light'>
-                <h1>Judul</h1>
+                <h3>AbsenJurnalSagara</h3>
                 <ButtonNav />
             </nav>
             <h1 className="px-3 py-3"><center>Journal List</center></h1>
@@ -101,6 +102,7 @@ const Jurnal = () => {
                         onChange={handleChange}
                         value={formData.tanggal}
                         name="tanggal"
+                        rows="1"
                     />
                 </div>
                 <div className="form-group mt-3">

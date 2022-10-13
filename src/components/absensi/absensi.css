@@ -3,7 +3,7 @@
     height: 90vh;
     display: flex;
     justify-content: space-evenly;
-    background: linear-gradient(90deg, rgba(11, 171, 100, 1) 0%, rgba(59, 183, 143, 1) 100%);
+    background: linear-gradient(#96E4DF, #4DCCC6);
     overflow: hidden;
 }
 
@@ -98,7 +98,7 @@ label {
 
 input[type="date"],
 input[type="time"] {
-    background: linear-gradient(90deg, rgba(11, 171, 100, 1) 0%, rgba(59, 183, 143, 1) 100%);
+    background: linear-gradient(#96E4DF, #4DCCC6);
     padding: 15px;
     color: #ffffff;
     font-size: 18px;
@@ -124,7 +124,7 @@ input[type="time"] {
     width: 100px;
     height: fit-content;
     background: white;
-    border: 2px solid rgba(11, 171, 100, 1);
+    border: 2px solid #4DCCC6;
     margin: 5px;
     display: flex;
     align-items: center;
@@ -151,7 +151,7 @@ input[type="radio"] {
 }
 
 input[type="radio"]:checked {
-    accent-color: rgba(11, 171, 100, 1);
+    accent-color: #4DCCC6;
     width: 5px;
     height: 5px;
     margin-right: 5px;

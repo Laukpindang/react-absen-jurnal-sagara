@@ -1,0 +1,23 @@
+.Jurnal{
+    margin: 0 auto !important;
+    padding: 0 !important;
+    max-width: 750px !important;
+    background-image: linear-gradient(#96E4DF, #4DCCC6) !important;
+}
+
+.Jurnal input{
+    background: white !important;
+    color: black !important;
+}
+
+.Jurnal button{
+    background: blue;
+}
+
+.list-group .btn-warning{
+    background: yellow;
+}
+
+.list-group .btn-danger{
+    background: red;
+}

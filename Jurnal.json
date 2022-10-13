@@ -1,24 +1,9 @@
 {
   "jurnal": [
     {
-      "tanggal": "2022-10-11",
-      "isi": "Membuat App Jurnal",
-      "id": "609412b2162"
-    },
-    {
-      "id": "09412b21624",
-      "tanggal": "2022-10-10",
-      "isi": "Membuat CRUD sederhana"
-    },
-    {
-      "id": "31978a795ab",
-      "tanggal": "2022-10-03",
-      "isi": "Perkenalan aza"
-    },
-    {
-      "id": "b708d2482bc",
-      "tanggal": "2022-10-21",
-      "isi": "asdasdasd"
+      "id": "1df144fb7d3",
+      "tanggal": "2022-10-13",
+      "isi": "Mengedit page jurnal"
     }
   ]
 }
