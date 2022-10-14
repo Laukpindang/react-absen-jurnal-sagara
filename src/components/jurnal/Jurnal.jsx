@@ -16,11 +16,11 @@ const Jurnal = () => {
 
     const [formData, setFormData] = useState({
         tanggal: '',
-        isi: '',
+        kegiatan: '',
     })
 
     useEffect(() => {
-        axios.get('http://localhost:3000/jurnal').then((res) => {
+        axios.get('https://7c85-2001-448a-302c-326a-6924-b92e-a329-8261.ngrok.io/api/jurnal/').then((res) => {
             setJurnal(res?.data ?? [])
         })
     }, [])
@@ -38,7 +38,7 @@ const Jurnal = () => {
             alert('mohon isi tanggalnya')
             return false
         }
-        if (formData.isi === "") {
+        if (formData.kegiatan === "") {
             alert('mohon isi jurnalnya')
             return false
         }
@@ -47,32 +47,32 @@ const Jurnal = () => {
             data.forEach((jurnal) => {
                 if (jurnal.id === isUpdate.id) {
                     jurnal.tanggal = formData.tanggal;
-                    jurnal.isi = formData.isi;
+                    jurnal.kegiatan = formData.kegiatan;
                 }
             });
 
-            axios.put(`http://localhost:3000/jurnal/${isUpdate.id}`, {
-                tanggal: formData.tanggal, isi: formData.isi
+            axios.put(`https://7c85-2001-448a-302c-326a-6924-b92e-a329-8261.ngrok.io/api/jurnal/${isUpdate.id}`, {
+                tanggal: formData.tanggal, kegiatan: formData.kegiatan
             }).then(res => {
                 alert('berhasil mengedit data')
             })
         } else {
-            let newData = { id: uid(), tanggal: formData.tanggal, isi: formData.isi }
+            let newData = { id: uid(), tanggal: formData.tanggal, kegiatan: formData.kegiatan }
             data.push(newData)
-            axios.post('http://localhost:3000/jurnal/', newData).then(res => {
+            axios.post('https://7c85-2001-448a-302c-326a-6924-b92e-a329-8261.ngrok.io/api/jurnal/', newData).then(res => {
                 alert('berhasil menyimpan data')
             })
         }
 
         setJurnal(data);
         setIsUpdate({ id: null, status: false })
-        setFormData({ tanggal: '', isi: '' })
+        setFormData({ tanggal: '', kegiatan: '' })
     }
 
     function handleEdit(id) {
         let data = [...jurnal]
         let foundData = data.find((jurnal) => jurnal.id === id)
-        setFormData({ tanggal: foundData.tanggal, isi: foundData.isi })
+        setFormData({ tanggal: foundData.tanggal, kegiatan: foundData.kegiatan })
         setIsUpdate({ id: id, status: true })
     }
 
@@ -80,7 +80,7 @@ const Jurnal = () => {
         console.log(id);
         let data = [...jurnal]
         let filteredData = data.filter(jurnal => jurnal.id !== id)
-        axios.delete(`http://localhost:3000/jurnal/${id}`).then(res => {
+        axios.delete(`https://7c85-2001-448a-302c-326a-6924-b92e-a329-8261.ngrok.io/api/jurnal/${id}`).then(res => {
             alert('berhasil menghapus data')
         })
         setJurnal(filteredData)
@@ -111,7 +111,7 @@ const Jurnal = () => {
                         className="form-control"
                         onChange={handleChange}
                         value={formData.isi}
-                        name="isi"
+                        name="kegiatan"
                         rows="3"
                     />
                 </div>

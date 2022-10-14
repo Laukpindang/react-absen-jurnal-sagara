@@ -27,6 +27,6 @@
     font-size: medium;
 }
 
-::-webkit-calendar-picker-indicator {
+.Jurnal ::-webkit-calendar-picker-indicator {
     filter: none;
 }
