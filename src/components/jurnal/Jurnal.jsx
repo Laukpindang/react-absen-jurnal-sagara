@@ -115,8 +115,8 @@ const Jurnal = () => {
                         rows="3"
                     />
                 </div>
-                <div>
-                    <button type="submit" className="btn btn-primary w-100 mt-3">
+                <div className='sub-btn'>
+                    <button type="submit" className="btn btn-outline-dark w-100 mt-3">
                         Save
                     </button>
                 </div>

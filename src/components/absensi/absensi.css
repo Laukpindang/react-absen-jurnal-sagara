@@ -3,7 +3,7 @@
     height: 90vh;
     display: flex;
     justify-content: space-evenly;
-    background: linear-gradient(#96E4DF, #4DCCC6);
+    background: #4682b4;
     overflow: hidden;
 }
 
@@ -90,15 +90,15 @@
     flex-direction: column;
 }
 
-label {
+.input label {
     margin-top: 5px;
     margin-bottom: 5px;
     font-size: 18px;
 }
 
-input[type="date"],
-input[type="time"] {
-    background: linear-gradient(#96E4DF, #4DCCC6);
+.input input[type="date"],
+.input input[type="time"] {
+    background: #4682b4;
     padding: 15px;
     color: #ffffff;
     font-size: 18px;
@@ -124,7 +124,7 @@ input[type="time"] {
     width: 100px;
     height: fit-content;
     background: white;
-    border: 2px solid #4DCCC6;
+    border: 2px solid #4682b4;
     margin: 5px;
     display: flex;
     align-items: center;
@@ -151,7 +151,7 @@ input[type="radio"] {
 }
 
 input[type="radio"]:checked {
-    accent-color: #4DCCC6;
+    accent-color: #4682b4;
     width: 5px;
     height: 5px;
     margin-right: 5px;

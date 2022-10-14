@@ -1,16 +1,15 @@
 import React from "react";
-import './button.css'
-// import { Link } from "react-router-dom";
+import './button.css';
 
 export default function Button(props) {
 
     if (props.type === "navAbsen") {
         return (
-            <button>Absensi</button>
+            <button className="btn btn-outline-dark">Absensi</button>
         )
     } else if (props.type === "navJurnal") {
         return (
-            <button>Jurnal</button>
+            <button className="btn btn-outline-dark">Jurnal</button>
         )
     } else {
         return (

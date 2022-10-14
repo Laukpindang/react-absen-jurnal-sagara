@@ -115,7 +115,7 @@ export default function Absensi() {
 
                         <br />
 
-                        <button onClick={postData}>Kirim</button>
+                        <button className="btn btn-outline-dark" onClick={postData}>Kirim</button>
                     </div>
                 </div>
             </div>
